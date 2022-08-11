@@ -1,4 +1,4 @@
-# Document Structure Continued
+# Document Structure
 
 ## Learning Goals
 
@@ -24,6 +24,11 @@ If you haven't already, fork and clone this lesson into your local environment.
 Navigate into its directory in the terminal, then run `code .` to open the files
 in Visual Studio Code.
 
+Make sure you also `npm install` all the dependencies so you can test your work 
+as you go with `npm test`.
+
+
+
 ## Recognize Basic HTML Document Structure
 
 Let's start by adding the bare essentials of an HTML document to the provided
@@ -41,7 +46,7 @@ Let's start by adding the bare essentials of an HTML document to the provided
 > it's a good habit to get into. Go ahead and indent the `head` and `body` tags
 > inside the `html` tags, if you haven't already.
 
-If written correctly, running `learn test` now will pass three of the seven
+If written correctly, running `npm test` now will pass three of the seven
 tests:
 
 - `has a DOCTYPE tag`
@@ -178,6 +183,24 @@ to keep the title brief, or it will not be fully visible.
 Adding the title should get the last two tests passing! Run the tests one last
 time to verify.
 
+## Boilerplate
+
+While understanding the basic HTML document structure is important, luckily we 
+don't always have to set it up ourselves. Because the basic document structure 
+should be the same for all HTML, we can use a template every single time. 
+We call this template **boilerplate code**. 
+
+Most code editors will have an HTML boilerplate available for you to use in `.html`
+files. For VS Code, the shortcut to use the boilerplate is simply typing `!` in the 
+file and hitting tab or enter. You will immediately see the HTML document structure 
+all set up for you. It's like magic! 
+
+To try it out, create a new file called `boilerplate.html` and test it there. 
+
+> **NOTE**: You may see some extra things we didn't talk about like `<meta>` tags. 
+> Typically, won't need to touch those, so we won't cover them in detail. However, 
+> if you're interested in their function, check out the resources at the bottom.
+
 ## Conclusion
 
 In this lesson, we've reviewed the basics of document structure, as well as what
@@ -186,3 +209,8 @@ to add relevant data about our webpage as a whole. As a bonus surprise, by
 learning how to make our web pages _search engine friendly_, we've also dabbled
 a bit into the basics of Search Engine Optimization! We are now ready to take a
 deeper dive into the visual content of HTML pages.
+
+## Resources
+
+- [MDN - The metadata element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) 
+- [W3 - HTML meta tag](https://www.w3schools.com/tags/tag_meta.asp)
